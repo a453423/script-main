@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="/home/">FS BASEMENT</a>
+            <a href="/exploit/">Exploits</a>
+            <a href="/script/">Scripts</a>
+            <a href="/market/">Market</a>
+            <a href="https://discord.gg/m3XxBCgPPX">Discord</a>
+            
+            <div class="theme-toggle" id="themeToggle">
+                <!-- Moon icon (shows in light mode) -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/>
+                </svg>
+                <!-- Sun icon (shows in dark mode) -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+                    <path d="M12,17a5,5,0,1,0-5-5A5,5,0,0,0,12,17ZM12,9a3,3,0,1,1-3,3A3,3,0,0,1,12,9Z"/>
+                    <path d="M12,5a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5Z"/>
+                    <path d="M12,19a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19Z"/>
+                    <path d="M5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Z"/>
+                    <path d="M20,11H19a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Z"/>
+                    <path d="M6.36,7.05a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29,1,1,0,0,0,0-1.41l-.7-.71a1,1,0,0,0-1.41,1.41Z"/>
+                    <path d="M17.65,7.05l.71-.71A1,1,0,0,0,17,4.93l-.71.71a1,1,0,0,0,0,1.41A1,1,0,0,0,17.65,7.05Z"/>
+                    <path d="M6.36,16.95a1,1,0,0,0-1.41,1.41l.71.7a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41Z"/>
+                    <path d="M17.65,16.95l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29l.71-.71a1,1,0,0,0-1.41-1.41Z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="page-title">Marketplace</h1>
+        
+        <!-- Featured Product Banner -->
+        <div class="featured-banner">
+            <img src="/api/placeholder/1200/300"  style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+            <div class="featured-content">
+                <div class="featured-info">
+                    <div class="featured-title">Support and Discord </div>
+                    <div class="featured-description">Are you looking for Great Support and Fast Respond when buying or selling your item? Join to our discord server All item will be delivered within 24 hours.</div>
+
+                    <a href="https://discord.gg/NQxFZMEFyy" class="featured-btn">Join</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+            <div class="category-tab active">All Items</div>
+            <div class="category-tab">Exploits</div>
+            <div class="category-tab">Scripts</div>
+            <div class="category-tab">Bundles</div>
+            <div class="category-tab">VIP Access</div>
+            <div class="category-tab">Tools</div>
+        </div>
+        
+        <!-- Filters and Search -->
+        <div class="market-filters">
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+            <div class="filter-options">
+                <select id="categoryFilter" class="filter-dropdown">
+                    <option value="All Items">All Categories</option>
+                    <option value="Exploits">Exploits</option>
+                    <option value="Scripts">Scripts</option>
+                    <option value="Bundles">Bundles</option>
+                    <option value="VIP Access">VIP Access</option>
+                </select>
+
+            </div>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="market-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="Exploits">
+                <div class="product-image">
+                    <img src="img/Rune-Slayer-Discord-Server.jpg" alt="Script Pack">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Rune Slayer Boss Logs</div>
+                    <div class="product-description">The Boss Log System is a real-time tracking and recordkeeping feature designed to monitor all boss-related activity within the game world. It functions as both a developer tool and a gameplay mechanic, providing detailed logs of boss spawns, behavior phases, ability usage, player interactions, and defeat outcomes.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$5.00</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.5 (83)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="buy-btn">Purchase</a>
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+
+  
+
+            <div class="product-card" data-category="Exploits">
+                <div class="product-image">
+                    <img src="img/ghoulre.PNG" alt="Script Pack">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Death Logs</div>
+                    <div class="product-description">The Permadeath Event Log is a system that tracks and records every instance where a player or character experiences permanent death within the game. This log captures detailed information about the event, including the time, location, and conditions surrounding the death, along with the specific cause.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$5.00</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.5 (83)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="buy-btn">Purchase</a>
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>  
+            <div class="product-card" data-category="Scripts">
+                <div class="product-image">
+                    <img src="img/Rune-Slayer-Discord-Server.jpg" alt="Script Pack">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Rune Slayer Script </div>
+                    <div class="product-description">Rune Slayer Script is a powerful all-in-one tool designed to enhance your gameplay with features like ESP to see players, mobs, and items through walls, Auto Farm for effortless grinding, Auto Collect to instantly pick up drops, God Mode and Auto Heal for survival, Speed Boost and Infinite Jump for mobility, and Teleport with No Clip to move freely across the map. With a fully customizable and user-friendly interface, this script gives you everything you need to dominate the game with ease.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$10.00</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.5 (83)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="buy-btn">Purchase</a>
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="product-card" data-category="Scripts">
+                <div class="product-image">
+                    <img src="img/ghoulre.PNG" alt="Script Pack">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Ghoul Re Script </div>
+                    <div class="product-description">Ghoul Re Script is an all-in-one script built for dominating the world of ghouls and CCG. It includes powerful features like ESP to track players, NPCs, and items through walls, Auto Farm for fast yen and level grinding, Auto Kill for instant takedowns, Auto Collect for grabbing drops instantly, and Teleport for quick navigation. With speed hacks, infinite jump, and a clean UI, this script is perfect for players who want to level up fast, win fights easily, and control the game effortlessly.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$10.00</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.5 (83)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="buy-btn">Purchase</a>
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="product-card" data-category="Bundles">
+                <div class="product-image">
+                    <img src="img/robloxshop.PNG" alt="Script Pack">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Ingame Item on Roblox</div>
+                    <div class="product-description">Looking for game items without breaking the bank? We sell in-game items at super low prices — fast, safe, and reliable. Whether you're after weapons, skins, currency, or rare loot, we’ve got you covered. we sell item such as adopt me pets, ingame item like runeslayer item, mm2 items</div>
+                    <div class="product-meta">
+                        <div class="product-price">1-99$</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.5 (83)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="buy-btn">Purchase</a>
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Bundles">
+                <div class="product-image">
+                    <img src="img/robux.png" alt="Script Pack">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Robux</div>
+                    <div class="product-description">Need Robux but don’t want to overspend? We offer Robux at the lowest prices – quick, safe, and hassle-free. Perfect for buying game passes, avatar items, or boosting your favorite games!.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$6.99 / 1k</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.5 (83)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="buy-btn">Purchase</a>
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Bundles">
+                <div class="product-image">
+                    <img src="img/bloxfruit.jpg" alt="Script Pack">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Gift Item</div>
+                    <div class="product-description">Collection of 50+ premium scripts for various games. Includes auto-farming, ESP, aimbots, and more.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$1.99</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.5 (83)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="buy-btn">Purchase</a>
+                        <a href="https://discord.gg/gxaUQEmRpb" target="_blank" class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        
+        
+            
+            <!-- Product 2 -->
+            
+            
+        
+
+            
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/280/180" alt="Custom Script">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">ShadowHack Pro</div>
+                    <div class="product-description">Universal game mod tool with advanced features for manipulating game memory. Compatible with most popular titles.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$34.99</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.7 (95)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn">Purchase</button>
+                        <button class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/280/180" alt="Tool Suite">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">NexusInjector</div>
+                    <div class="product-description">State-of-the-art DLL injector with custom bypass methods. Works with all latest anti-cheat systems.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$24.99</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.6 (143)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn">Purchase</button>
+                        <button class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/280/180" alt="Game Tool">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">PhantomUI</div>
+                    <div class="product-description">Advanced UI overlay for competitive games. Includes radar hacks, player ESP, item trackers and more.</div>
+                    <div class="product-meta">
+                        <div class="product-price">$15.99</div>
+                        <div class="product-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            4.4 (76)
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn">Purchase</button>
+                        <button class="wishlist-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination">
+            <div class="page-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </div>
+            <div class="page-item active">1</div>
+            <div class="page-item">2</div>
+            <div class="page-item">3</div>
+            <div class="page-item">4</div>
+            <div class="page-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

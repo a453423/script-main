@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="/home/">FS BASEMENT</a>
+            <a href="/exploit/">Exploits</a>
+            <a href="/script/">Scripts</a>
+            <a href="/market/">Market</a>
+            <a href="https://discord.gg/m3XxBCgPPX">Discord</a>
+            
+            <div class="theme-toggle" id="themeToggle">
+                <!-- Moon icon (shows in light mode) -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/>
+                </svg>
+                <!-- Sun icon (shows in dark mode) -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+                    <path d="M12,17a5,5,0,1,0-5-5A5,5,0,0,0,12,17ZM12,9a3,3,0,1,1-3,3A3,3,0,0,1,12,9Z"/>
+                    <path d="M12,5a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5Z"/>
+                    <path d="M12,19a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19Z"/>
+                    <path d="M5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Z"/>
+                    <path d="M20,11H19a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Z"/>
+                    <path d="M6.36,7.05a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29,1,1,0,0,0,0-1.41l-.7-.71a1,1,0,0,0-1.41,1.41Z"/>
+                    <path d="M17.65,7.05l.71-.71A1,1,0,0,0,17,4.93l-.71.71a1,1,0,0,0,0,1.41A1,1,0,0,0,17.65,7.05Z"/>
+                    <path d="M6.36,16.95a1,1,0,0,0-1.41,1.41l.71.7a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41Z"/>
+                    <path d="M17.65,16.95l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29l.71-.71a1,1,0,0,0-1.41-1.41Z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Search bar -->
+    <div class="search-container">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Search for tools, exploits, or scripts..." />
+            <button id="searchButton">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M21.71,20.29l-5.4-5.4a8,8,0,1,0-1.42,1.42l5.4,5.4a1,1,0,0,0,1.42-1.42ZM10,16a6,6,0,1,1,6-6A6,6,0,0,1,10,16Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="download-grid">
+            <!-- JJSploit Card -->
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/infinite.jpg" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Infinite Yield</h3>
+                    <p class="card-description">By Edge A command line script hub with over 6 years of development</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>1.2m+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/dex.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Dex Explorer</h3>
+                    <p class="card-description">By MoonsecV2 A powerful game explorer GUI. Shows every instance of the game and all their properties. Useful for developers..</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://store-ap-tyo-1.gofile.io/download/web/ecdcea3d-a127-433f-9622-52da514c09d6/Dex%20Explorer.txt" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>5m+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/fly.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Fly</h3>
+                    <p class="card-description">By (Unknown)  Why walk when you can fly?</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/Fly.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>1m+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/aimbot.png" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Aimbot</h3>
+                    <p class="card-description">By WeAreDevs  Snaps aim to player heads. Featuring wall detection, team check, and mouse movement bypass.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/WRD%20Aimbot.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>1m+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/gravity.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Gravity Switch</h3>
+                    <p class="card-description">By WeAreDevs Press "e" to toggle the game's gravity</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/Gravity%20Switch.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>200k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/antiafk.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Focus Anti-AFK </h3>
+                    <p class="card-description">By Shawnjbragdon Even when you switch to another window, you will appear to be active.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/anti-afk%20via%20autofocus.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>200k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+              <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/phantom.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Phantom Forces Hitbox Expander</h3>
+                    <p class="card-description">By gamermanaway Makes enemies easier to hit by enlarging their hitbox.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/Demonfall%20Trainer.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>130k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/demonfall.jpg" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Demonfall Trainer</h3>
+                    <p class="card-description">By solicitors A Demonfall trainer featuring a mob ESP, auto breath, god mode, anti-debuffs, and trinket farm.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/Demonfall%20Trainer.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>130k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+           
+
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/timber.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Timber - Autofarm</h3>
+                    <p class="card-description">By scde Slowly, but surely automatically farms in the game Timber.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/Timber!%20Autofarm.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>100k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/apoc2.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Apoc2 Map Radar</h3>
+                    <p class="card-description">By I C E E  Puts all other players onto your mini-map in Apoc Rising 2.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="hhttps://cdn.wearedevs.net/scripts/Apoc2%20Map%20Radar.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>100k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/world.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">World Zero Kill Aura</h3>
+                    <p class="card-description">By I C E E Adds a kill aura for the game, World // Zero.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/WZKillAura.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>120k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+
+
+            
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/critical.webp" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Critical Strike GUI</h3>
+                    <p class="card-description">By I C E E  Displays a cheat trainer to use for the game, Critical Strike.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/Critical%20Strike%20GUI.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>12k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/phantom.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">PF Easy Fly </h3>
+                    <p class="card-description">By gamermanaway  Enables you to fly through the game, Phantom Forces</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/PF%20Easy%20Fly.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>130k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/ro.PNG" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">RoCitizens Infinite Money</h3>
+                    <p class="card-description">By Mein  Drown in cash while playing RoCitizens.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/RoCitizens%20Infinite%20Money.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>110k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/exploit/img/autoclicker.jpeg" alt="JJSploit">
+                    </div>
+                    <h3 class="card-title">Click Teleport</h3>
+                    <p class="card-description">By WeAreDevs Left ctrl + click on any spot on the game and you will immediately teleport to it!</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cdn.wearedevs.net/scripts/Click%20Teleport.txt?d=1" target="_blank" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div class="download-count">
+                            <img class="platform-icon" src="/exploit/img/window.png" alt="Windows">
+                            <span>33k+</span>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="footer-section">
+    
+                <div class="copyright">
+                    © 2025 FS BASEMENT MADE BY FREDRICH & SEVENTH
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
